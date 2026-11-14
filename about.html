@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | StudySpot</title>
+  <link rel="icon" href="favicon.ico?v=5" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/brand-icon-32.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/brand-icon-16.png?v=5">
+  <link rel="apple-touch-icon" href="images/brand-icon-180.png?v=5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Internal CSS (only for this page) -->
+  <style>
+    .about-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 3.5rem 0 1rem; }
+    .about-hero img { border-radius: 26px; border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .role { color: var(--muted); margin-bottom: .8rem; }
+    @media (max-width: 900px) { .about-hero { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" width="44" height="44" alt="StudySpot logo: a location pin holding an open book">StudySpot
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="main-nav" aria-label="Main menu">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a class="menu-cta" href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- ===== INTRO ===== -->
+      <section class="about-hero">
+        <div>
+          <p class="step-tag">About us</p>
+          <h1>We built StudySpot to end the room hunt</h1>
+          <p class="muted">We are two students who were tired of walking between buildings to find an empty study room. StudySpot is our course project for CPIS-358.</p>
+          <ul class="toc">
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#journey">How we built it</a></li>
+            <li><a href="#numbers">Numbers</a></li>
+          </ul>
+        </div>
+        <figure style="margin:0;">
+          <img class="photo" src="images/hero-room.jpg" width="1600" height="1100" data-orig-width="1600"
+               alt="A study room with a wooden table and pink chairs. Click the whiteboard, window or table to jump to a section."
+               usemap="#aboutMap">
+          <map name="aboutMap" id="aboutMap">
+            <area shape="rect" coords="0,0,640,700" href="#mission" alt="Left side of the picture – our mission" title="Our mission">
+            <area shape="rect" coords="640,0,960,700" href="#journey" alt="Middle of the picture – how we built it" title="How we built it">
+            <area shape="rect" coords="960,0,1600,700" href="#numbers" alt="Right side of the picture – our numbers" title="Our numbers">
+            <area shape="rect" coords="0,700,1600,1100" href="#team" alt="Bottom of the picture – meet the team" title="Meet the team">
+          </map>
+        </figure>
+      </section>
+
+      <!-- ===== MISSION ===== -->
+      <section class="section" id="mission">
+        <article class="card">
+          <h2>Our mission</h2>
+          <p>Make every study room on campus easy to find, fair to share and quick to book, so students spend their time learning instead of searching.</p>
+          <h3>What we believe</h3>
+          <ul class="check-list">
+            <li>Shared spaces work best when everyone can see what is free.</li>
+            <li>Booking a room should take less than a minute.</li>
+            <li>Cancelling a room you will not use gives it to another student.</li>
+          </ul>
+          <a href="#top" class="back-top">↑ Back to top</a>
+        </article>
+      </section>
+
+      <!-- ===== TEAM ===== -->
+      <section class="section" id="team" style="padding-top:0;">
+        <div class="section-head">
+          <p class="step-tag">The team</p>
+          <h2>Meet the team</h2>
+        </div>
+        <div class="team-grid">
+          <article class="card text-center">
+            <div class="avatar">R</div>
+            <h3>Remass Ashmawi</h3>
+            <p class="role">Home and Login, booking system, logo and pictures</p>
+            <ul class="check-list" style="text-align:left;display:inline-block;">
+              <li>Home page and Login page</li>
+              <li>Booking search, results and My bookings</li>
+              <li>Logo, favicon and room pictures</li>
+              <li>Half of the testing and GitHub commits</li>
+            </ul>
+            <p><span class="badge">CPIS-358 · KAU</span></p>
+          </article>
+          <article class="card text-center">
+            <div class="avatar">W</div>
+            <h3>Wejdan Fallatah</h3>
+            <p class="role">Sign Up and About Us, form validation, theme and styling</p>
+            <ul class="check-list" style="text-align:left;display:inline-block;">
+              <li>Sign Up page and About Us page</li>
+              <li>Form validation for Login and Sign Up</li>
+              <li>Green and orange theme and styling</li>
+              <li>Half of the testing and GitHub commits</li>
+            </ul>
+            <p><span class="badge">CPIS-358 · KAU</span></p>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top:1.5rem;">
+          <h3>Who did what</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Area</th><th>Main owner</th><th>Files</th></tr></thead>
+              <tbody>
+                <tr><td>Home page (HTML and content)</td><td>Remass Ashmawi</td><td>index.html</td></tr>
+                <tr><td>Login page</td><td>Remass Ashmawi</td><td>login.html</td></tr>
+                <tr><td>Booking search, results and My bookings (JavaScript)</td><td>Remass Ashmawi</td><td>js/main.js</td></tr>
+                <tr><td>Logo, favicon and room pictures</td><td>Remass Ashmawi</td><td>images/</td></tr>
+                <tr><td>Sign Up page</td><td>Wejdan Fallatah</td><td>signup.html</td></tr>
+                <tr><td>About Us page</td><td>Wejdan Fallatah</td><td>about.html</td></tr>
+                <tr><td>Form validation and menu (JavaScript)</td><td>Wejdan Fallatah</td><td>js/main.js</td></tr>
+                <tr><td>Theme, colours and styling (CSS)</td><td>Wejdan Fallatah</td><td>css/style.css</td></tr>
+                <tr><td>Testing, GitHub commits and report</td><td>Both, equally</td><td>whole project</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== JOURNEY ===== -->
+      <section class="section" id="journey" style="padding-top:0;">
+        <div class="grid-2">
+          <article class="card">
+            <h2>How we built it</h2>
+            <ol class="steps">
+              <li><strong>Chose the topic:</strong> study room booking for campus.</li>
+              <li><strong>Picked the look:</strong> deep green with warm orange, suggested by Wejdan.</li>
+              <li><strong>Built the pages:</strong> Home, Login, Sign Up and About Us with HTML, CSS and JavaScript.</li>
+              <li><strong>Tested and published</strong> the site with GitHub Pages.</li>
+            </ol>
+          </article>
+          <article class="card">
+            <h2>Try it yourself</h2>
+            <p>Search for a room on the <a href="index.html#search">Home page</a>, then <a href="signup.html">create an account</a> or <a href="login.html">log in</a> to confirm your booking.</p>
+            <p class="muted">Demo account: demo@stu.kau.edu.sa / Demo@1234</p>
+            <a class="btn" href="index.html#search">Find a room</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== NUMBERS ===== -->
+      <section class="section" id="numbers" style="padding-top:0;">
+        <div class="section-head">
+          <p class="step-tag">StudySpot in numbers</p>
+          <h2>What is on offer</h2>
+        </div>
+        <div class="stats-band">
+          <div class="stat-item"><strong data-count="8">8</strong><span>Study rooms</span></div>
+          <div class="stat-item"><strong data-count="3">3</strong><span>Campus buildings</span></div>
+          <div class="stat-item"><strong data-count="14">14</strong><span>Hours open every day</span></div>
+          <div class="stat-item"><strong data-count="3">3</strong><span>Room types</span></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h3>StudySpot</h3><p>Study and meeting room booking for King Abdulaziz University students.</p></div>
+        <div><h3>Pages</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="login.html">Login</a></li><li><a href="signup.html">Sign Up</a></li></ul></div>
+        <div><h3>Course project</h3><p>CPIS-358 Internet Applications &amp; Web Programming<br>Faculty of Computing and Information Technology</p></div>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> StudySpot · Student project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | StudySpot</title>
+  <link rel="icon" href="favicon.ico?v=5" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/brand-icon-32.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/brand-icon-16.png?v=5">
+  <link rel="apple-touch-icon" href="images/brand-icon-180.png?v=5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" width="44" height="44" alt="StudySpot logo: a location pin holding an open book">StudySpot
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="main-nav" aria-label="Main menu">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a class="menu-cta" href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container auth-grid">
+      <aside class="auth-side">
+        <p class="step-tag">Welcome back</p>
+        <h2>Your next study room is a few taps away</h2>
+        <p class="muted">Log in to confirm bookings and see all your reservations in one place.</p>
+        <img class="photo" src="images/hero-room.jpg" width="1600" height="1100" data-orig-width="1600"
+             alt="A study room with a wooden table and pink chairs. Click it to open About Us." usemap="#aboutMap">
+        <map name="aboutMap" id="aboutMap">
+            <area shape="rect" coords="0,0,640,700" href="about.html#mission" alt="Left side of the picture – our mission" title="Our mission">
+            <area shape="rect" coords="640,0,960,700" href="about.html#journey" alt="Middle of the picture – how we built it" title="How we built it">
+            <area shape="rect" coords="960,0,1600,700" href="about.html" alt="Right side of the picture – About Us" title="About Us">
+            <area shape="rect" coords="0,700,1600,1100" href="about.html#team" alt="Bottom of the picture – meet the team" title="Meet the team">
+          </map>
+      </aside>
+
+      <section class="auth-card" aria-labelledby="loginTitle">
+        <h1 id="loginTitle">Login</h1>
+        <p class="sub">Enter your KAU email and password.</p>
+
+        <div id="loginAlert" class="alert" role="alert"></div>
+
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" placeholder="name@stu.kau.edu.sa" autocomplete="email" required>
+            <div class="error-msg"></div>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <div class="pw-wrap">
+              <input type="password" id="loginPassword" name="password" placeholder="At least 8 characters" autocomplete="current-password" required>
+              <button type="button" class="pw-toggle" data-target="loginPassword" aria-label="Show or hide password">👁</button>
+            </div>
+            <div class="error-msg"></div>
+          </div>
+          <button type="submit" class="btn btn-block">Login</button>
+        </form>
+
+        <p class="form-links">No account yet? <a href="signup.html">Sign up</a> · <a href="index.html">Back to Home</a></p>
+        <p class="hint"><strong>Demo account:</strong> demo@stu.kau.edu.sa / Demo@1234</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h3>StudySpot</h3><p>Study and meeting room booking for King Abdulaziz University students.</p></div>
+        <div><h3>Pages</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="login.html">Login</a></li><li><a href="signup.html">Sign Up</a></li></ul></div>
+        <div><h3>Course project</h3><p>CPIS-358 Internet Applications &amp; Web Programming<br>Faculty of Computing and Information Technology</p></div>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> StudySpot · Student project</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

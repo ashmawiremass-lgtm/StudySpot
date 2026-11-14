@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub steps | StudySpot</title>
+<style>
+body{font-family:"Segoe UI",system-ui,sans-serif;background:#1b2d24;color:#fbf1de;margin:0;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:2rem 5%}
+h1{font-family:Georgia,serif;color:#f58a25}
+h2{margin-top:2rem;color:#ffd9a8}
+.step{background:#2a4437;border-radius:16px;padding:1rem 1.2rem;margin:.9rem 0;border-left:6px solid #f58a25}
+code,pre{background:#14231b;border-radius:8px;color:#ffe3bd}
+code{padding:.1rem .4rem}
+pre{padding:.9rem;overflow-x:auto}
+.note{background:#33503f;border-radius:12px;padding:.8rem 1rem}
+</style></head><body><main>
+<h1>Upload StudySpot to GitHub</h1>
+<p>Two people: Remass and Wejdan. Both must push commits from their own GitHub accounts.</p>
+
+<h2>A. Remass: create the repository</h2>
+<div class="step"><b>1.</b> Sign in at github.com, press <b>+</b> (top right) &gt; <b>New repository</b>. Name it <code>studyspot</code>, choose <b>Public</b>, do not add a README, press <b>Create repository</b>.</div>
+<div class="step"><b>2.</b> Open a terminal inside the unzipped <code>studyspot</code> folder (VS Code: Terminal &gt; New Terminal) and run:
+<pre>git init
+git add .
+git commit -m "Add StudySpot website"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/studyspot.git
+git push -u origin main</pre>
+Replace <code>YOUR-USERNAME</code>. If Git asks you to sign in, use your GitHub login in the browser window, or a Personal Access Token as the password.</div>
+
+<h2>B. Add Wejdan as a collaborator</h2>
+<div class="step"><b>3.</b> Repository &gt; <b>Settings</b> &gt; <b>Collaborators</b> &gt; <b>Add people</b>. Type Wejdan's GitHub username and send the invite. She accepts it from her email or at github.com/notifications.</div>
+
+<h2>C. Invite the professor</h2>
+<div class="step"><b>4.</b> Same page: Settings &gt; Collaborators &gt; <b>Add people</b>. Type <code>ssbasabain@kau.edu.sa</code> and choose <b>Add</b> (GitHub will offer to invite by email). The invite must be sent before the deadline.</div>
+
+<h2>D. Wejdan: commit from her own account</h2>
+<div class="step"><b>5.</b> After accepting, Wejdan runs:
+<pre>git clone https://github.com/REMASS-USERNAME/studyspot.git
+cd studyspot</pre>
+She makes a real change (for example in <code>about.html</code> or <code>css/style.css</code>), then:
+<pre>git add .
+git commit -m "Update About page"
+git push</pre></div>
+<div class="step"><b>6.</b> Remass pulls her work, and keeps adding small commits on different days:
+<pre>git pull</pre>
+Use clear messages such as "Add reminders" or "Fix mobile layout". Commits only count on your contribution calendar if your Git email matches your GitHub account (<code>git config user.email "your-github-email"</code>).</div>
+
+<h2>E. Publish the site (GitHub Pages)</h2>
+<div class="step"><b>7.</b> Repository &gt; <b>Settings</b> &gt; <b>Pages</b>. Under <b>Branch</b> choose <code>main</code> and folder <code>/ (root)</code>, then <b>Save</b>.</div>
+<div class="step"><b>8.</b> Wait 1 to 2 minutes and refresh. GitHub shows the link <code>https://YOUR-USERNAME.github.io/studyspot/</code>. Open it to test, and put it in the report.</div>
+
+<h2>F. For the report</h2>
+<div class="step"><b>9.</b> Take a screenshot of each member's contribution calendar (profile page, "contributions" graph). Screenshot the repository page and the Collaborators page showing the invite to <code>ssbasabain@kau.edu.sa</code>.</div>
+<div class="step"><b>10.</b> Name the report <code>Group Number – CPIS358 – Section – Assignment1.docx</code> and upload it to Blackboard with the website ZIP.</div>
+<p class="note">Do this before the deadline. Your site's favicon will appear on the GitHub Pages link even when it does not appear locally.</p>
+</main></body></html>
